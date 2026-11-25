@@ -8,3 +8,10 @@
     text-decoration: line-through;
     opacity: 0.6;
 }
+.aprobado {
+    color: green;
+}
+
+.suspenso {
+    color: red;
+}
