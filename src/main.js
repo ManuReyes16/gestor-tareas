@@ -1,8 +1,12 @@
 import "./style.css";
 import { estado } from "./estado.js";
-import { contarPendientes } from "./tareas.js";
+import { render } from "./dom.js";
+
+const titulo = document.querySelector("h1");
+
+titulo.textContent = "Gestor de tareas";
+titulo.classList.add("titulo");
+
+render();
 
 console.table(estado.tareas);
-
-const pendientes = contarPendientes(estado.tareas);
-document.querySelector("#app").textContent = `Tienes ${pendientes} tareas pendientes`;
